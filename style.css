@@ -1,0 +1,91 @@
+.header {
+    background: linear-gradient(#87d4a5, #c1e4bd);
+}
+
+.tectree {
+    width: 200px;
+    margin: 30px 0px 0px 50px;
+}
+
+main {
+    display: flex;
+    height: 75vh;
+    background: #c1e4bd;
+}
+
+.pergunta {
+    width: 50%;
+    display: block;
+    margin: 100px; 
+}
+
+.texto {
+    background: #c1e4bd;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 500px;
+    display: block;
+    position: static;
+    resize: none;
+    border: none;
+    margin-top: 100px;
+}
+
+main p {
+    margin-top: 20px;
+}
+
+p strong {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 1px;
+    font-weight: bold;
+}
+
+.botao, .botao2{
+    background: rgb(54, 124, 54);
+    font-size: 15px;
+    color: #d39b6e;
+    border-radius: 5px;
+    margin: 50px 15px 0 0;
+    width: 150px;
+    height: 50px;
+}
+
+.botao:hover, .botao2:hover {
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.botao:active, .botao2:active {
+    border: 2px solid #d39b6e;
+}
+
+.cod {
+    width: 400px;
+}
+
+.resposta {
+    text-align: center;
+    border: 2px solid #d39b6e;
+    box-sizing: border-box;
+    background: rgb(54, 124, 54);
+    width: 401px;
+    height: 550px;
+}
+
+.msg {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.msg :nth-child(1) {
+    opacity: 0.9;
+    color: #d39b6e;
+}
+
+footer {
+    text-align: center;
+    background: #c1e4bd;
+    height: 30px;
+}

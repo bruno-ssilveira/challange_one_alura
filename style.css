@@ -7,9 +7,13 @@
     margin: 30px 0px 0px 50px;
 }
 
+body {
+    min-height: 100vh;
+    min-width: 100%;
+}
+
 main {
     display: flex;
-    height: 75vh;
     background: #c1e4bd;
 }
 
@@ -85,7 +89,12 @@ p strong {
 }
 
 footer {
-    text-align: center;
     background: #c1e4bd;
-    height: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 0 10px;
 }

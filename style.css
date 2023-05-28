@@ -1,102 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
 body {
-    min-height: 100vh;
-    min-width: 100%;
     background-color: #c1e4bd;
 }
 
 .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     background: linear-gradient(#87d4a5, #c1e4bd);
 }
 
-.tectree {
-    width: 200px;
-    margin: 30px 0px 0px 50px;
+.header__logo {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
 }
 
 main {
+    height: 100vh;
     display: flex;
     background: #c1e4bd;
-    min-height: 72vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15% 5% 0;
 }
 
 .pergunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    display: block;
-    margin: 100px; 
+    margin: 100px 0 100px 100px;
+    gap: 100px;
+}
+
+.pergunta__p {
+    display: flex;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .texto {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     background: #c1e4bd;
     border-radius: 5px;
     font-size: 30px;
-    width: 500px;
-    display: block;
-    position: static;
     resize: none;
     border: none;
-    margin-top: 100px;
 }
 
-main p {
-    margin-top: 20px;
-}
-
-p strong {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 1px;
-    font-weight: bold;
-}
-
-.botao, .botao2{
-    background: rgb(54, 124, 54);
-    font-size: 15px;
-    color: #d39b6e;
-    border-radius: 5px;
-    margin: 50px 15px 0 0;
-    width: 150px;
+.botao {
+    display: flex;
+    gap: 30px;
     height: 50px;
 }
 
-.botao:hover, .botao2:hover {
-    box-shadow: 10px 10px 5px #000000;
+.botao__criptografar, .botao__descriptografar {
+    display: flex;
+    justify-content: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    background: #d39b6e;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
 }
 
-.botao:active, .botao2:active {
-    border: 2px solid #d39b6e;
+.botao__criptografar:hover, .botao__descriptografar:hover {
+    background: #00b818;
+    transition: 1s;
+    transform: scale(1.1);
 }
 
-.cod {
-    width: 400px;
+.botao__criptografar:active, .botao__descriptografar:active {
+    color: #ffffff;
+    transition: none;
+    border: 2px solid #ffffff;
 }
 
 .resposta {
-    text-align: center;
-    border: 2px solid #d39b6e;
-    box-sizing: border-box;
-    background: rgb(54, 124, 54);
-    width: 401px;
-    height: 550px;
-}
-
-.msg {
-    font-size: 20px;
-    color: white;
-    padding: 20px;
-}
-
-.msg :nth-child(1) {
-    opacity: 0.9;
-    color: #d39b6e;
-}
-
-footer {
-    background: #c1e4bd;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border: 4px solid #000000;
+    height: 620px;
+    width: 408px;
+    gap: 40px;
+    text-align: center;
+}
+
+.resposta__imagem {
+    height: 400px;
+    width: 400px;
+}
+
+.resposta__p1 {
+    font-weight: bold;
     font-size: 20px;
 }
 
-footer p {
-    margin: 0 10px;
+.resposta__copiar {
+    background: #d39b6e;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.resposta__copiar:hover {
+    background: #00b818;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.resposta__copiar:active {
+    color: #ffffff;
+    transition: none;
+    border: 2px solid #ffffff;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background: #87d4a5;
+    padding: 15px;
+}
+
+.footer__logo {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer__logo:hover {
+    transform: scale(1.5);
+    transition: 1s;
 }

@@ -14,33 +14,40 @@
 
     <body>
         <header class="header">
-            <img src="tectree.svg" class="tectree" alt="Árvore de conexões elétricas">
+            <img src="tectree.svg" class="header__logo" alt="Árvore de conexões elétricas">
         </header>
 
         <main>
-            <div class="pergunta">
+            <section class="pergunta">
                 <textarea class="texto" cols="30" rows="1" placeholder="Digite para criptografar"></textarea>
-                <p><strong>!</strong> Apenas letras minúsculas e sem acento</p>
-                <input type="submit" value="criptografar" class="botao">
-                <input type="submit" value="descriptografar" class="botao2">
-            </div>
-
-            <div class="resposta">
-                <img src="cod.svg" class="cod" alt="computador">
-                <div class="msg">
-                    <p>Nenhuma mensagem encontrada</p>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                <p class="pergunta__p">
+                    <img src="vector.svg">
+                    Apenas letras minúsculas e sem acento
+                </p>
+                <div class="botao">
+                    <input class="botao__criptografar" type="button" value="criptografar" onclick="botao_cripto()">
+                    <input class="botao__descriptografar" type="button" value="descriptografar" onclick="botao_descripto()">
                 </div>
-            </div>           
+            </section>
+
+            <section class="resposta">
+                <img class="resposta__imagem" src="cod.svg" alt="computador">
+                <p class="resposta__p1">Nenhuma mensagem encontrada</p>
+                <button class="resposta__copiar" onclick="copiarFrase()">copiar</button>
+                <p class="resposta__info">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </section>           
         </main>
 
-        <footer>
-            <p>Bruno Santos Silveira</p>
-            <a href="https://www.linkedin.com/in/bruno-santos-silveira/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <footer class="footer">
+            <p class="footer__p">&copy Bruno Santos Silveira</p>
+            <a href="https://www.linkedin.com/in/bruno-santos-silveira/" target="_blank" class="footer__logo"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/bruno-ssilveira" target="_blank" class="footer__logo"><ion-icon name="logo-github"></ion-icon></a>
         </footer>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="script.js"></script>
     </body>
 
 </html>

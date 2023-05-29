@@ -6,18 +6,18 @@ body {
 
 .header {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(#87d4a5, #c1e4bd);
 }
 
 .header__logo {
-    height: 150px;
-    width: 150px;
-    margin: 15px;
+    height: 11.25rem;
+    width: 11.25rem;
+    margin: 1%;
 }
 
-main {
+.conteudo {
     height: 100vh;
     display: flex;
     background: #c1e4bd;
@@ -47,7 +47,7 @@ main {
     font-family: 'Montserrat', sans-serif;
     background: #c1e4bd;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 1.88rem;
     resize: none;
     border: none;
 }
@@ -62,7 +62,7 @@ main {
     display: flex;
     justify-content: center;
     font-family: 'Krona One', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #000000;
     background: #d39b6e;
     border: 2px solid #000000;
@@ -104,7 +104,7 @@ main {
 
 .resposta__p1 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .resposta__copiar {
@@ -139,11 +139,65 @@ main {
 }
 
 .footer__logo {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #000000;
 }
 
 .footer__logo:hover {
     transform: scale(1.5);
     transition: 1s;
+}
+
+@media (max-width: 1100px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        gap: 10px;
+        width: auto;
+    }
+
+    .pergunta {
+        margin: 0;
+        width: auto;
+    }
+
+    .pergunta__p {
+        width: 19rem;
+    }
+
+    .botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .botao__criptografar, .botao__descriptografar {
+        padding: 0.6rem;
+        width: auto;
+    }
+
+    .resposta {
+        width: 360px;
+        margin-bottom: 5%;
+    }
+
+    .resposta__imagem {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 15%;
+    }
 }
